@@ -1,0 +1,554 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\ResZH.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\WriteFlash.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 315, 97
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 WriteIMEI"
+FONT 10, "宋体"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,21,21
+    LTEXT           "Spreadtrum WriteIMEI TOOL",IDC_STATIC,45,10,119,8,
+                    SS_NOPREFIX
+    LTEXT           "Version:",IDC_STATIC,45,25,37,8
+    DEFPUSHBUTTON   "确定",IDOK,258,7,50,14,WS_GROUP
+    LTEXT           "",IDC_STATIC_VERSION,81,24,94,11
+    LTEXT           "Build:",IDC_STATIC,45,43,25,8
+    LTEXT           "Static",IDC_STATIC_BUILD,73,43,25,8
+    LTEXT           "Copyright(c)2008-2009 Spreadtrum Communications Inc.",
+                    IDC_STATIC,45,60,221,13
+    LTEXT           "All rights reserved.",IDC_STATIC,45,76,81,8
+END
+
+IDD_WRITEFLASH_DIALOG DIALOGEX 0, 0, 308, 337
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "WriteIMEI"
+FONT 12, "微软雅黑", 0, 0, 0x1
+BEGIN
+    LTEXT           "端口",IDC_STATIC,16,10,16,8
+    PUSHBUTTON      "写入",IDC_BUTTON_START,267,8,31,12,BS_NOTIFY
+    PUSHBUTTON      "设置",IDC_BUTTON_SET,169,8,31,12
+    EDITTEXT        IDC_EDIT_IMEIMAIN,70,134,227,14,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    EDITTEXT        IDC_EDIT_IMEISENIOR,70,150,227,14,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    EDITTEXT        IDC_EDIT_BT,70,198,227,14,ES_AUTOHSCROLL
+    LTEXT           "测试结果:",IDC_STATIC,16,77,50,8
+    LTEXT           "请输入IMEI1:",IDC_STATIC_IMIE1,16,138,49,8
+    LTEXT           "请输入IMEI2:",IDC_STATIC_IMIE2,16,152,49,8
+    CONTROL         "",IDC_STATIC_MAINFRAME,"Static",SS_BLACKFRAME,7,7,291,
+                    306
+    LTEXT           "蓝牙地址：",IDC_STATIC_BT,16,200,49,8
+    PUSHBUTTON      "读取",IDC_BUTTON_READ,202,8,31,12
+    CTEXT           "PASS",IDC_STATIC_MESSAGE,70,24,227,61
+    PUSHBUTTON      "停止",IDC_BUTTON_STOP,235,8,31,12
+    LTEXT           "成功：",IDC_STATIC_PASS,16,23,50,8
+    LTEXT           "失败:",IDC_STATIC_FAIL,16,41,50,8
+    LTEXT           "通过率:",IDC_STATIC_PASSYIELD,16,59,50,8
+    EDITTEXT        IDC_EDIT_IMEITHIRD,70,166,227,14,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    LTEXT           "请输入IMEI3:",IDC_STATIC_IMIE3,16,168,49,8
+    EDITTEXT        IDC_EDIT_WIFI,70,214,227,14,ES_AUTOHSCROLL
+    LTEXT           "WIFI地址：",IDC_STATIC_WIFI,16,216,49,8
+    EDITTEXT        IDC_EDIT_IMEIFOUR,70,182,227,14,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    LTEXT           "请输入IMEI4:",IDC_STATIC_IMIE4,16,184,49,8
+    CTEXT           "",IDC_STATIC_PORTINDICATOR,282,315,16,14,0,
+                    WS_EX_CLIENTEDGE | WS_EX_STATICEDGE
+    COMBOBOX        IDC_COMBO_FORPORT,36,8,54,127,CBS_DROPDOWNLIST | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "模式选择",IDC_BUTTON2,92,8,42,12
+    CTEXT           "",IDC_STATIC_MODEDISP,7,315,269,14,SS_CENTERIMAGE,
+                    WS_EX_STATICEDGE
+    EDITTEXT        IDC_EDIT_SNMAIN,70,230,227,14,ES_AUTOHSCROLL
+    LTEXT           "请输入SN1:",IDC_STATIC_SN1,16,232,49,8
+    EDITTEXT        IDC_EDIT_SNSENIOR,70,246,227,14,ES_AUTOHSCROLL
+    LTEXT           "请输入SN2:",IDC_STATIC_SN2,16,248,49,8
+    LTEXT           "软件版本：",IDC_STATIC,16,91,52,26
+    LTEXT           "CU Reference",IDC_STATIC,16,262,46,8,NOT WS_VISIBLE
+    EDITTEXT        IDC_EDIT_CUREF1,70,274,18,12,ES_AUTOHSCROLL | NOT 
+                    WS_VISIBLE
+    EDITTEXT        IDC_EDIT_CUREF2,89,274,18,12,ES_AUTOHSCROLL | NOT 
+                    WS_VISIBLE
+    EDITTEXT        IDC_EDIT_CUREF3,108,274,18,12,ES_AUTOHSCROLL | NOT 
+                    WS_VISIBLE
+    EDITTEXT        IDC_EDIT_CUREF4,127,274,18,12,ES_AUTOHSCROLL | NOT 
+                    WS_VISIBLE
+    EDITTEXT        IDC_EDIT_CUREF5,146,274,18,12,ES_AUTOHSCROLL | NOT 
+                    WS_VISIBLE
+    EDITTEXT        IDC_EDIT_CUREF6,165,274,18,12,ES_AUTOHSCROLL | NOT 
+                    WS_VISIBLE
+    EDITTEXT        IDC_EDIT_CUREF7,184,274,18,12,ES_AUTOHSCROLL | NOT 
+                    WS_VISIBLE
+    EDITTEXT        IDC_EDIT_CUREF8,203,274,18,12,ES_AUTOHSCROLL | NOT 
+                    WS_VISIBLE
+    EDITTEXT        IDC_EDIT_CUREF9,222,274,18,12,ES_AUTOHSCROLL | NOT 
+                    WS_VISIBLE
+    EDITTEXT        IDC_EDIT_CUREF10,241,274,18,12,ES_AUTOHSCROLL | NOT 
+                    WS_VISIBLE
+    EDITTEXT        IDC_EDIT_CUREF11,260,274,18,12,ES_AUTOHSCROLL | NOT 
+                    WS_VISIBLE
+    EDITTEXT        IDC_EDIT_CUREF12,279,274,18,12,ES_AUTOHSCROLL | NOT 
+                    WS_VISIBLE
+    EDITTEXT        IDC_EDIT_CUREF13,70,297,18,12,ES_AUTOHSCROLL | NOT 
+                    WS_VISIBLE
+    EDITTEXT        IDC_EDIT_CUREF14,89,297,18,12,ES_AUTOHSCROLL | NOT 
+                    WS_VISIBLE
+    EDITTEXT        IDC_EDIT_CUREF15,108,297,18,12,ES_AUTOHSCROLL | NOT 
+                    WS_VISIBLE
+    EDITTEXT        IDC_EDIT_CUREF16,127,297,18,12,ES_AUTOHSCROLL | NOT 
+                    WS_VISIBLE
+    EDITTEXT        IDC_EDIT_CUREF17,146,297,18,12,ES_AUTOHSCROLL | NOT 
+                    WS_VISIBLE
+    EDITTEXT        IDC_EDIT_CUREF18,165,297,18,12,ES_AUTOHSCROLL | NOT 
+                    WS_VISIBLE
+    EDITTEXT        IDC_EDIT_CUREF19,184,297,18,12,ES_AUTOHSCROLL | NOT 
+                    WS_VISIBLE
+    EDITTEXT        IDC_EDIT_CUREF20,203,297,18,12,ES_AUTOHSCROLL | NOT 
+                    WS_VISIBLE
+    EDITTEXT        IDC_EDIT_CUREF21,222,297,18,12,ES_AUTOHSCROLL | NOT 
+                    WS_VISIBLE
+    EDITTEXT        IDC_EDIT_CUREF22,241,297,18,12,ES_AUTOHSCROLL | NOT 
+                    WS_VISIBLE
+    EDITTEXT        IDC_EDIT_CUREF23,260,297,18,12,ES_AUTOHSCROLL | NOT 
+                    WS_VISIBLE
+    EDITTEXT        IDC_EDIT_CUREF24,279,297,18,12,ES_AUTOHSCROLL | NOT 
+                    WS_VISIBLE | WS_DISABLED
+    LTEXT           "1",IDC_STATIC,76,263,8,8,NOT WS_VISIBLE
+    LTEXT           "2",IDC_STATIC,96,263,8,8,NOT WS_VISIBLE
+    LTEXT           "3",IDC_STATIC,113,263,8,8,NOT WS_VISIBLE
+    LTEXT           "4",IDC_STATIC,133,263,8,8,NOT WS_VISIBLE
+    LTEXT           "5",IDC_STATIC,153,263,8,8,NOT WS_VISIBLE
+    LTEXT           "6",IDC_STATIC,171,263,8,8,NOT WS_VISIBLE
+    LTEXT           "7",IDC_STATIC,190,263,8,8,NOT WS_VISIBLE
+    LTEXT           "8",IDC_STATIC,210,263,8,8,NOT WS_VISIBLE
+    LTEXT           "9",IDC_STATIC,228,263,8,8,NOT WS_VISIBLE
+    LTEXT           "10",IDC_STATIC,245,263,8,8,NOT WS_VISIBLE
+    LTEXT           "11",IDC_STATIC,264,263,8,8,NOT WS_VISIBLE
+    LTEXT           "12",IDC_STATIC,283,263,8,8,NOT WS_VISIBLE
+    LTEXT           "13",IDC_STATIC,76,287,8,8,NOT WS_VISIBLE
+    LTEXT           "14",IDC_STATIC,96,287,8,8,NOT WS_VISIBLE
+    LTEXT           "15",IDC_STATIC,113,287,8,8,NOT WS_VISIBLE
+    LTEXT           "16",IDC_STATIC,133,287,8,8,NOT WS_VISIBLE
+    LTEXT           "17",IDC_STATIC,153,287,8,8,NOT WS_VISIBLE
+    LTEXT           "18",IDC_STATIC,171,287,8,8,NOT WS_VISIBLE
+    LTEXT           "19",IDC_STATIC,190,287,8,8,NOT WS_VISIBLE
+    LTEXT           "20",IDC_STATIC,210,287,8,8,NOT WS_VISIBLE
+    LTEXT           "21",IDC_STATIC,228,287,8,8,NOT WS_VISIBLE
+    LTEXT           "22",IDC_STATIC,245,287,8,8,NOT WS_VISIBLE
+    LTEXT           "23",IDC_STATIC,264,287,8,8,NOT WS_VISIBLE
+    LTEXT           "24",IDC_STATIC,283,287,8,8,NOT WS_VISIBLE
+    EDITTEXT        IDC_EDIT_SW_VERSION,70,88,227,45,ES_MULTILINE | 
+                    ES_AUTOVSCROLL | ES_AUTOHSCROLL
+END
+
+IDD_DIALOG_SETIMEI DIALOG DISCARDABLE  0, 0, 319, 433
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "设置"
+FONT 10, "宋体"
+BEGIN
+    GROUPBOX        "蓝牙设备地址的自动生成方式",IDC_STATIC_GENADDRTYPE_BT,7,
+                    92,305,117
+    GROUPBOX        "WIFI地址的自动生成方式",IDC_STATIC_GENADDRTYPE_WIFI,7,
+                    148,305,61
+    GROUPBOX        "",IDC_STATIC,7,7,305,202
+    GROUPBOX        "",IDC_STATIC,7,210,305,102
+    GROUPBOX        "",IDC_STATIC_VERSIONFRAME,7,312,305,55
+    DEFPUSHBUTTON   "确定",IDOK,7,399,88,27
+    PUSHBUTTON      "取消",IDCANCEL,98,399,88,27
+    CONTROL         "IMEI(主卡)",IDC_CHECK_IMEI1,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,19,41,51,10
+    CONTROL         "站位检查及更新",IDC_CHECK_PHASE,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,19,22,68,10
+    CONTROL         "IMEI2",IDC_CHECK_IMEI2,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,95,41,51,10
+    EDITTEXT        IDC_EDIT_AUTOIMEI,19,232,278,22,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    LTEXT           "自动IMEI(主卡)起始号(勾选""自动生成IMEI""时有效)：",
+                    IDC_STATIC,19,221,182,8
+    CONTROL         "各IMEI相同",IDC_CHECK_SAMEIMEI,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,95,22,63,10
+    CONTROL         "蓝牙",IDC_CHECK_BT,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,19,78,34,10
+    CONTROL         "自动生成蓝牙",IDC_CHECK_AUTOBT,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,95,78,71,10
+    CONTROL         "保存IMEI到txt格式文件",IDC_CHECK_TXT,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,191,280,96,10
+    CONTROL         "保存IMEI到本地数据库文件",IDC_CHECK_MDB,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,191,293,106,10
+    CONTROL         "保存IMEI(保存在exe目录下)",IDC_CHECK_SAVE,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,171,265,111,10
+    CONTROL         "IMEI重复性检查\n(从已保存IMEI的文件中查询)",
+                    IDC_CHECK_REPEAT,"Button",BS_AUTOCHECKBOX | BS_MULTILINE | 
+                    WS_TABSTOP,19,279,111,30
+    CONTROL         "IMEI合法性检查(检查第15位)",IDC_CHECK_VALID,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,19,265,115,10
+    CONTROL         "IMEI3",IDC_CHECK_IMEI3,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,171,41,51,10
+    CONTROL         "IMEI4",IDC_CHECK_IMEI4,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,247,41,51,10
+    CONTROL         "WIFI",IDC_CHECK_WIFI,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,171,78,32,10
+    CONTROL         "自动生成WIFI",IDC_CHECK_AUTOWIFI,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,247,78,62,10
+    CONTROL         "检查软件版本",IDC_CHECK_VER,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,13,322,61,10
+    EDITTEXT        IDC_EDIT_VER,90,321,207,14,ES_AUTOHSCROLL
+    CONTROL         "按时间",IDC_RADIO_GENADDR_BT_TYPE1,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP,19,111,38,10
+    CONTROL         "按起始地址累加",IDC_RADIO_GENADDR_BT_TYPE2,"Button",
+                    BS_AUTORADIOBUTTON,95,111,68,10
+    EDITTEXT        IDC_EDIT_INITADDR_BT,171,108,126,14,ES_AUTOHSCROLL
+    GROUPBOX        "",IDC_STATIC_SNFRAME,7,368,305,23
+    CONTROL         "SN1",IDC_CHECK_SN1,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,19,375,28,10
+    CONTROL         "自动生成SN1",IDC_CHECK_AUTOSN1,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,53,375,58,10
+    CONTROL         "SN2",IDC_CHECK_SN2,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,171,375,28,10
+    CONTROL         "自动生成SN2",IDC_CHECK_AUTOSN2,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,205,375,58,10
+    COMBOBOX        IDC_COMBO_GENIMEI1TYPE,19,54,56,96,CBS_DROPDOWNLIST | 
+                    CBS_AUTOHSCROLL | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_GENIMEI2TYPE,95,54,56,96,CBS_DROPDOWNLIST | 
+                    CBS_AUTOHSCROLL | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_GENIMEI3TYPE,171,54,56,96,CBS_DROPDOWNLIST | 
+                    CBS_AUTOHSCROLL | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_GENIMEI4TYPE,247,54,56,96,CBS_DROPDOWNLIST | 
+                    CBS_AUTOHSCROLL | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "按默认地址生成",IDC_RADIO_GENADDR_WIFI_TYPE1,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP,18,166,68,10
+    CONTROL         "按起始地址累加",IDC_RADIO_GENADDR_WIFI_TYPE2,"Button",
+                    BS_AUTORADIOBUTTON,94,166,68,10
+    EDITTEXT        IDC_EDIT_INITADDR_WIFI,170,164,126,14,ES_AUTOHSCROLL
+    CONTROL         "读取操作时进行IMEI核对",IDC_CHECK_IMEI_ONREAD,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,205,399,99,10
+    LTEXT           "地址文件路径",IDC_STATIC_BTADAS,19,129,46,8
+    EDITTEXT        IDC_EDIT_BTADDRPATH,70,126,213,15,ES_AUTOHSCROLL
+    PUSHBUTTON      "..",IDC_BTN_ASSBTADDR,286,126,14,15
+    LTEXT           "地址文件路径",IDC_STATIC_WIFIADAS,19,185,46,8
+    EDITTEXT        IDC_EDIT_WIFIADDRPATH,70,182,213,15,ES_AUTOHSCROLL
+    PUSHBUTTON      "..",IDC_BTN_ASSWIFIADDR,286,182,14,15
+    CONTROL         "检查智能机软件版本",IDC_CHECK_AP_VER,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,13,343,76,10
+    EDITTEXT        IDC_EDIT_AP_VER,90,342,207,14,ES_AUTOHSCROLL
+END
+
+IDD_DIALOG_MODESEL DIALOGEX 0, 0, 307, 184
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "模式选择"
+FONT 11, "宋体", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,18,163,62,14
+    PUSHBUTTON      "取消",IDCANCEL,85,163,62,14
+    CONTROL         "正常开机模式",IDC_RADIO_MODE1,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,18,23,64,10
+    CONTROL         "常规写号模式",IDC_RADIO_MODE2,"Button",
+                    BS_AUTORADIOBUTTON | WS_TABSTOP,18,111,64,10
+    LTEXT           "",IDC_STATIC_MODEDESRP_NORMAL,91,23,209,27,0,
+                    WS_EX_STATICEDGE
+    LTEXT           "",IDC_STATIC_MODEDESRP_WROKING,91,111,209,27,0,
+                    WS_EX_STATICEDGE
+    CONTROL         "写号完成后关闭自动虚拟端口的功能",IDC_CHECK_DIS_AUTOUSB,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,91,53,144,10
+    LTEXT           "",IDC_STATIC_AUTOUSBTIPS,91,64,209,39
+    CONTROL         "转换模式至不重启DUT(仅适用于WCDMA数据卡)",
+                    IDC_CHECK_NOT_REBOOT_DUT,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,44,144,256,10
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,6,4,1
+ PRODUCTVERSION 1,6,4,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404b0"
+        BEGIN
+            VALUE "Comments", "\0"
+            VALUE "CompanyName", "Spreadtrum Communications Inc.\0"
+            VALUE "FileDescription", "Spreadtrum WriteIMEI TOOL\0"
+            VALUE "FileVersion", "1, 6, 4, 1\0"
+            VALUE "InternalName", "WriteIMEI\0"
+            VALUE "LegalCopyright", "CopyRight (C) 2007-2012 Spreadtrum Communications Inc.\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "WriteIMEI.EXE\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "WriteIMEI\0"
+            VALUE "ProductVersion", "1, 6, 4, 1\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 308
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 90
+    END
+
+    IDD_WRITEFLASH_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 298
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 329
+    END
+
+    IDD_DIALOG_SETIMEI, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 312
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 426
+    END
+
+    IDD_DIALOG_MODESEL, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 300
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 177
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "关于 WriteIMEI(&A)..."
+    IDS_TIMEOUT             "操作超时!"
+    IDS_CONNECT             "手机连接成功! 正在操作手机，请不要断电..."
+    IDS_SUCCESS             "PASS! 按Enter开始下一次测试"
+    IDS_FAIL                "写命令失败!错误代码: %d ! "
+    IDS_PORT_FAIL           "打开串口%d失败!"
+    IDS_WAIT                "请在%d秒内连接上手机并加电!"
+    IDS_INIT                "准 备 就 绪"
+    IDS_WAIT_NEWMET         "正在检验..."
+    IDS_VERIFPHONESTATE_FAIL "手机无应答!"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_CABLEINDICATOR_CONN "已检测到端口!"
+    IDS_CREATPHASE_ERR      "创建站位信息对象失败"
+    IDS_CABLEINDICATOR_DISCONN "未检测到端口!"
+    IDS_STOP                "停止当前测试 !"
+    IDS_IMEI_LENTH          "IMEI长度必须15位!"
+    IDS_BT_LENTH            "输入的 蓝牙地址长度不正确!"
+    IDS_IMEI_ERR            "输入的IMEI %d不合法!"
+    IDS_READ_FAIL           "读手机失败!"
+    IDS_READ_PASS           "读手机成功!"
+    IDS_CHECK               "请在设置对话框里选择测试项!"
+    IDS_WRITETIME           "写入时间超过%d 毫秒!"
+    IDS_SPPH_SUCC           "检查或者更新测试站位成功!"
+    IDS_SPPH_FAIL           "检查或者更新测试站位信息失败!"
+    IDS_SPPH_OPEN_PORT      "操作测试站位信息时打开串口失败!"
+    IDS_SPPH_STATION_NOT_EXIST "测试站名字不存在,请检查配置!"
+    IDS_SPPH_STATION_NOT_PASSED "前站%s未通过!"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_SPPH_WRITE_PRODUCTINFO_FAIL "写测试站位信息失败!"
+    IDS_SPPH_READ_PRODUCTINFO_FAIL "读测试站位信息失败!"
+    IDS_SPPH_READ_MAGIC_NUMBER_FAIL "读测试站位信息头失败!"
+    IDS_SPPH_DEFAULT        "创建PhaseCheck缓存失败"
+    IDS_SPPH_INVALID_SPPH_OBJECT "操作站位信息时,无效的测试站位操作句柄"
+    IDS_REUSE_IMEI          "IMEI %d 重复!"
+    IDS_OPEN_SAVEFILE_ERR   "打开保存IMEI的文件失败!"
+    IDS_STATIC_PASS         "成功： %d"
+    IDS_STATIC_FAIL         "失败： %d"
+    IDS_STATIC_YIELD        "通过率:%d%%"
+    IDS_INVALID_PRODUCTINFO "无效的生产信息结构"
+    IDS_SPPH_NOT_TESTED     "前站%s未测试"
+    IDS_SPPH_BUFFER_SMALL   "初始化生产信息结构函数输入的缓存太小"
+    IDS_SPPH_INVALID_MAGIC  "无效的生产信息结构头Magci Number(不是SP09或者SP05)"
+    IDS_VERSION_READ        "读软件版本失败"
+    IDS_VERSION_ERR         "软件版本不匹配"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_IMEI_REJECT         "IMEI被保护!"
+    IDS_WARNING             "手机不支持IMEI4!"
+    IDS_WIFI_FORMAT         "WIFI起始第一个字节必须偶数"
+    IDS_WIFI_SIX            "WIFI前6位必须跟设置文件中设置ForeWIFI一致"
+    IDS_MODEDISP_NEWMODE    "正常开机模式"
+    IDS_MODEDISP_OLDMODE    "常规写号模式"
+    IDS_MODEDISP_NEWMODE_TIPS 
+                            "插USB线: 手机上电开机或不开机后开始写；\r\n插U-ART: 手机上电开机后开始写；"
+    IDS_SN_LENTH            "输入的SN长度不正确!"
+    IDS_MODEDISP_OLDMODE_TIPS 
+                            "必须使用剪断VBUS 的USB线或者UART串口线.\r\n操作时注意先插线, 再给手机终端上电."
+    IDS_ERRORSTR_UNKNOWN    "未知错误!"
+    IDS_TIPSSTR_DISAUTOUSB  "写号完成后是否关闭“自动虚拟端口的功能”?\r\n如果关闭该功能，下次插入USB数据线该终端将不再虚拟端口，通过USB数据无法进行读写操作！\r\n如果不关闭该功能，终端出厂后用户插USB线，电脑将会弹出未知设备，消费者带来困扰!\r\n"
+    IDS_STRING_STATIC_CONN  "已检测到端口!"
+    IDS_STRING_STATIC_DISCONN "未检测到端口!"
+    IDS_WRITESN_FAIL        "写SN号失败! 错误代码%d!"
+    IDS_SN_ERR              "输入的SN号不合法!"
+    IDS_AUTOCLOSEUSB        "如果钩选此项，那么下次插入USB数据线，则不再虚拟端口，此功能无效；\r\n如果不钩此项，那么可重复使用此功能，进行连续写IMEI号；"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_GENCODETYPE_ITEM1   "手动输入"
+    IDS_GENCODETYPE_ITEM2   "默认IMEI"
+    IDS_GENCODETYPE_ITEM3   "逐级累加"
+    IDS_SET_VERSIONLENGTH_ERR "设置的版本号长度必须大于 %d !"
+    IDS_IMEI_REPEAT         "输入的IMEI中有相同的！"
+    IDS_CHKBT_FAIL          "蓝牙地址不正确 !"
+    IDS_CHKWIFI_FAIL        "WIFI MAC地址不正确 !"
+    IDS_CHKIMEI_FAIL        "IMEI号不正确!"
+    IDS_CHK_PASS            "核对正确!"
+    IDS_CHK_FAIL            "核对错误!"
+    IDS_INVALID_INPUT_BTADDR "输入的蓝牙地址不符合输入规则. 规则:%s\r\n"
+    IDS_INVALID_INPUT_WFADDR "输入的WIFI地址不符合输入规则. 规则:%s\r\n"
+    IDS_AP_VER_ERR          "AP版本检测失败！"
+    IDS_OPEN_CDROM_FAIL     "打开CD-ROM失败！"
+    IDS_READ_CUREF_FAIL     "读取CU Reference失败！"
+    IDS_WRITE_CUREF_FAIL    "写入CU Reference失败！"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_SEND_AT_CMD_ERR     "设置失败（%s）！"
+END
+
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\ResZH.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

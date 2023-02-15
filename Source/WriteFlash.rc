@@ -1,0 +1,556 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\WriteFlash.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\WriteFlash.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 315, 97
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 WriteIMEI"
+FONT 10, "宋体"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,21,21
+    LTEXT           "Spreadtrum WriteIMEI TOOL",IDC_STATIC,45,10,119,8,
+                    SS_NOPREFIX
+    LTEXT           "Version:",IDC_STATIC,45,25,37,8
+    DEFPUSHBUTTON   "确定",IDOK,258,7,50,14,WS_GROUP
+    LTEXT           "",IDC_STATIC_VERSION,81,24,94,11
+    LTEXT           "Build:",IDC_STATIC,45,43,25,8
+    LTEXT           "Static",IDC_STATIC_BUILD,73,43,25,8
+    LTEXT           "Copyright(c)2008-2009 Spreadtrum Communications Inc.",
+                    IDC_STATIC,45,60,221,13
+    LTEXT           "All rights reserved.",IDC_STATIC,45,76,81,8
+END
+
+IDD_WRITEFLASH_DIALOG DIALOGEX 0, 0, 312, 334
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "WriteIMEI"
+FONT 13, "Verdana", 0, 0, 0x1
+BEGIN
+    PUSHBUTTON      "Write",IDC_BUTTON_START,265,9,30,17,BS_NOTIFY
+    PUSHBUTTON      "Set",IDC_BUTTON_SET,172,9,30,17
+    EDITTEXT        IDC_EDIT_IMEIMAIN,92,123,203,16,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    EDITTEXT        IDC_EDIT_IMEISENIOR,92,141,203,16,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    EDITTEXT        IDC_EDIT_BT,92,195,203,16,ES_AUTOHSCROLL
+    LTEXT           "Result:",IDC_STATIC,12,76,70,8
+    LTEXT           "Please input IMEI1:",IDC_STATIC_IMIE1,12,127,64,8
+    LTEXT           "Please input IMEI2:",IDC_STATIC_IMIE2,12,145,64,8
+    CONTROL         "",IDC_STATIC_MAINFRAME,"Static",SS_BLACKFRAME,7,0,297,
+                    315
+    LTEXT           "BlueTooth Address:",IDC_STATIC_BT,12,199,64,8
+    PUSHBUTTON      "Read",IDC_BUTTON_READ,203,9,30,17
+    CTEXT           "PASS",IDC_STATIC_MESSAGE,92,28,203,57
+    PUSHBUTTON      "Stop",IDC_BUTTON_STOP,234,9,30,17
+    LTEXT           "PASS:",IDC_STATIC_PASS,12,31,70,8
+    LTEXT           "FAIL:",IDC_STATIC_FAIL,12,46,70,8
+    LTEXT           "Yiled:",IDC_STATIC_PASSYIELD,12,61,70,8
+    EDITTEXT        IDC_EDIT_IMEITHIRD,92,159,203,16,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    LTEXT           "Please input IMEI3:",IDC_STATIC_IMIE3,12,163,64,8
+    EDITTEXT        IDC_EDIT_WIFI,92,213,203,16,ES_AUTOHSCROLL
+    LTEXT           "Wifi Address:",IDC_STATIC_WIFI,12,217,64,8
+    EDITTEXT        IDC_EDIT_IMEIFOUR,92,177,203,16,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    LTEXT           "Please input IMEI4:",IDC_STATIC_IMIE4,12,181,64,8
+    CTEXT           "",IDC_STATIC_PORTINDICATOR,286,317,18,10,SS_CENTERIMAGE | 
+                    WS_BORDER,WS_EX_CLIENTEDGE | WS_EX_STATICEDGE
+    COMBOBOX        IDC_COMBO_FORPORT,33,13,57,79,CBS_DROPDOWNLIST | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "PORT",IDC_STATIC,12,14,19,8
+    PUSHBUTTON      "Mode Select",IDC_BUTTON2,94,9,50,17
+    CTEXT           "",IDC_STATIC_MODEDISP,7,317,275,10,0,WS_EX_STATICEDGE
+    EDITTEXT        IDC_EDIT_SNMAIN,92,231,203,16,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT_SNSENIOR,92,249,203,16,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    LTEXT           "Please input SN1:",IDC_STATIC_SN1,12,235,64,8
+    LTEXT           "Please input SN2:",IDC_STATIC_SN2,12,253,64,8
+    LTEXT           "AP Ver:",IDC_STATIC,12,93,25,8
+    LTEXT           "CU Reference",IDC_STATIC,12,269,64,8,NOT WS_VISIBLE
+    EDITTEXT        IDC_EDIT_CUREF1,91,279,15,12,ES_AUTOHSCROLL | NOT 
+                    WS_VISIBLE
+    EDITTEXT        IDC_EDIT_CUREF2,107,279,15,12,ES_AUTOHSCROLL | NOT 
+                    WS_VISIBLE
+    EDITTEXT        IDC_EDIT_CUREF3,123,279,15,12,ES_AUTOHSCROLL | NOT 
+                    WS_VISIBLE
+    EDITTEXT        IDC_EDIT_CUREF4,139,279,15,12,ES_AUTOHSCROLL | NOT 
+                    WS_VISIBLE
+    EDITTEXT        IDC_EDIT_CUREF5,155,279,15,12,ES_AUTOHSCROLL | NOT 
+                    WS_VISIBLE
+    EDITTEXT        IDC_EDIT_CUREF6,171,279,15,12,ES_AUTOHSCROLL | NOT 
+                    WS_VISIBLE
+    EDITTEXT        IDC_EDIT_CUREF7,187,279,15,12,ES_AUTOHSCROLL | NOT 
+                    WS_VISIBLE
+    EDITTEXT        IDC_EDIT_CUREF8,203,279,15,12,ES_AUTOHSCROLL | NOT 
+                    WS_VISIBLE
+    EDITTEXT        IDC_EDIT_CUREF9,219,279,15,12,ES_AUTOHSCROLL | NOT 
+                    WS_VISIBLE
+    EDITTEXT        IDC_EDIT_CUREF10,235,279,15,12,ES_AUTOHSCROLL | NOT 
+                    WS_VISIBLE
+    EDITTEXT        IDC_EDIT_CUREF11,251,279,15,12,ES_AUTOHSCROLL | NOT 
+                    WS_VISIBLE
+    EDITTEXT        IDC_EDIT_CUREF12,267,279,15,12,ES_AUTOHSCROLL | NOT 
+                    WS_VISIBLE
+    EDITTEXT        IDC_EDIT_CUREF13,91,302,15,12,ES_AUTOHSCROLL | NOT 
+                    WS_VISIBLE
+    EDITTEXT        IDC_EDIT_CUREF14,107,302,15,12,ES_AUTOHSCROLL | NOT 
+                    WS_VISIBLE
+    EDITTEXT        IDC_EDIT_CUREF15,123,302,15,12,ES_AUTOHSCROLL | NOT 
+                    WS_VISIBLE
+    EDITTEXT        IDC_EDIT_CUREF16,139,302,15,12,ES_AUTOHSCROLL | NOT 
+                    WS_VISIBLE
+    EDITTEXT        IDC_EDIT_CUREF17,155,302,15,12,ES_AUTOHSCROLL | NOT 
+                    WS_VISIBLE
+    EDITTEXT        IDC_EDIT_CUREF18,171,302,15,12,ES_AUTOHSCROLL | NOT 
+                    WS_VISIBLE
+    EDITTEXT        IDC_EDIT_CUREF19,187,302,15,12,ES_AUTOHSCROLL | NOT 
+                    WS_VISIBLE
+    EDITTEXT        IDC_EDIT_CUREF20,203,302,15,12,ES_AUTOHSCROLL | NOT 
+                    WS_VISIBLE
+    EDITTEXT        IDC_EDIT_CUREF21,219,302,15,12,ES_AUTOHSCROLL | NOT 
+                    WS_VISIBLE
+    EDITTEXT        IDC_EDIT_CUREF22,235,302,15,12,ES_AUTOHSCROLL | NOT 
+                    WS_VISIBLE
+    EDITTEXT        IDC_EDIT_CUREF23,251,302,15,12,ES_AUTOHSCROLL | NOT 
+                    WS_VISIBLE
+    EDITTEXT        IDC_EDIT_CUREF24,267,302,15,12,ES_AUTOHSCROLL | NOT 
+                    WS_VISIBLE | WS_DISABLED
+    LTEXT           "1",IDC_STATIC,96,269,9,8,NOT WS_VISIBLE
+    LTEXT           "2",IDC_STATIC,113,269,9,8,NOT WS_VISIBLE
+    LTEXT           "3",IDC_STATIC,128,269,9,8,NOT WS_VISIBLE
+    LTEXT           "4",IDC_STATIC,144,269,9,8,NOT WS_VISIBLE
+    LTEXT           "5",IDC_STATIC,160,269,9,8,NOT WS_VISIBLE
+    LTEXT           "6",IDC_STATIC,176,269,9,8,NOT WS_VISIBLE
+    LTEXT           "7",IDC_STATIC,192,269,9,8,NOT WS_VISIBLE
+    LTEXT           "8",IDC_STATIC,207,269,9,8,NOT WS_VISIBLE
+    LTEXT           "9",IDC_STATIC,224,269,9,8,NOT WS_VISIBLE
+    LTEXT           "10",IDC_STATIC,238,269,9,8,NOT WS_VISIBLE
+    LTEXT           "11",IDC_STATIC,255,269,9,8,NOT WS_VISIBLE
+    LTEXT           "12",IDC_STATIC,270,269,9,8,NOT WS_VISIBLE
+    LTEXT           "13",IDC_STATIC,96,293,9,8,NOT WS_VISIBLE
+    LTEXT           "14",IDC_STATIC,113,293,9,8,NOT WS_VISIBLE
+    LTEXT           "15",IDC_STATIC,128,293,9,8,NOT WS_VISIBLE
+    LTEXT           "16",IDC_STATIC,144,293,9,8,NOT WS_VISIBLE
+    LTEXT           "17",IDC_STATIC,160,293,9,8,NOT WS_VISIBLE
+    LTEXT           "18",IDC_STATIC,176,293,9,8,NOT WS_VISIBLE
+    LTEXT           "19",IDC_STATIC,192,293,9,8,NOT WS_VISIBLE
+    LTEXT           "20",IDC_STATIC,207,293,9,8,NOT WS_VISIBLE
+    LTEXT           "21",IDC_STATIC,224,293,9,8,NOT WS_VISIBLE
+    LTEXT           "22",IDC_STATIC,238,293,9,8,NOT WS_VISIBLE
+    LTEXT           "23",IDC_STATIC,255,293,9,8,NOT WS_VISIBLE
+    LTEXT           "24",IDC_STATIC,270,293,9,8,NOT WS_VISIBLE
+    EDITTEXT        IDC_EDIT_SW_VERSION,93,93,203,28,ES_MULTILINE | 
+                    ES_AUTOVSCROLL | ES_AUTOHSCROLL
+END
+
+IDD_DIALOG_SETIMEI DIALOG DISCARDABLE  0, 0, 340, 371
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Setting"
+FONT 10, "Verdana"
+BEGIN
+    GROUPBOX        "Generate Bluetooth Mac Address. Automatically",
+                    IDC_STATIC_GENADDRTYPE_BT,7,93,323,101
+    GROUPBOX        "Generate WIFI Mac Address. Automatically",
+                    IDC_STATIC_GENADDRTYPE_WIFI,7,140,323,54
+    RADIOBUTTON     "System Time",IDC_RADIO_GENADDR_BT_TYPE1,20,105,59,10,
+                    WS_GROUP
+    RADIOBUTTON     "Initial Addr.",IDC_RADIO_GENADDR_BT_TYPE2,86,105,54,10
+    EDITTEXT        IDC_EDIT_INITADDR_BT,152,104,171,12,ES_AUTOHSCROLL
+    CONTROL         "IMEI1",IDC_CHECK_IMEI1,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,20,33,36,10
+    CONTROL         "IMEI2",IDC_CHECK_IMEI2,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,96,33,36,10
+    CONTROL         "IMEI3",IDC_CHECK_IMEI3,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,172,33,36,10
+    CONTROL         "IMEI4",IDC_CHECK_IMEI4,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,248,33,36,10
+    COMBOBOX        IDC_COMBO_GENIMEI1TYPE,20,45,73,85,CBS_DROPDOWNLIST | 
+                    CBS_AUTOHSCROLL | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_GENIMEI2TYPE,96,45,73,85,CBS_DROPDOWNLIST | 
+                    CBS_AUTOHSCROLL | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_GENIMEI3TYPE,172,45,73,85,CBS_DROPDOWNLIST | 
+                    CBS_AUTOHSCROLL | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_GENIMEI4TYPE,248,45,73,85,CBS_DROPDOWNLIST | 
+                    CBS_AUTOHSCROLL | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "Auto-Generate",IDC_RADIO_GENADDR_WIFI_TYPE1,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP,20,155,65,10
+    CONTROL         "Initial Addr.",IDC_RADIO_GENADDR_WIFI_TYPE2,"Button",
+                    BS_AUTORADIOBUTTON,86,155,54,10
+    EDITTEXT        IDC_EDIT_INITADDR_WIFI,152,154,171,12,ES_AUTOHSCROLL
+    GROUPBOX        "",IDC_STATIC,7,4,323,190
+    GROUPBOX        "",IDC_STATIC,7,194,323,80
+    GROUPBOX        "",IDC_STATIC_VERSIONFRAME,7,273,323,50
+    EDITTEXT        IDC_EDIT_AUTOIMEI,20,223,302,18,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    DEFPUSHBUTTON   "Save",IDOK,7,348,85,17
+    PUSHBUTTON      "Cancel",IDCANCEL,98,348,85,17
+    CONTROL         "PhaseCheck",IDC_CHECK_PHASE,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,20,18,56,10
+    LTEXT           "Base IMEI Number\n(ONLY available when generating automatically)",
+                    IDC_STATIC,20,204,166,19
+    CONTROL         "Same IMEI (IMEI1=IMEI2=IMEI3=IMEI4)",IDC_CHECK_SAMEIMEI,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,96,18,189,10
+    CONTROL         "BlueTooth Mac Address",IDC_CHECK_BT,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,20,65,94,10
+    CONTROL         "Generate Bluetooth Addr. Automatically",
+                    IDC_CHECK_AUTOBT,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    172,65,147,10
+    CONTROL         "Save to IMEI.txt",IDC_CHECK_TXT,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,242,248,80,10
+    CONTROL         "Save to IMEI.mdb",IDC_CHECK_MDB,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,242,260,80,10
+    CONTROL         "Save IMEI",IDC_CHECK_SAVE,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,191,248,48,10
+    CONTROL         "Prevent the IMEI Reuse (Check from log file or mdb)",
+                    IDC_CHECK_REPEAT,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    20,260,189,10
+    CONTROL         "IMEI CRC Check (The 15th digital)",IDC_CHECK_VALID,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,20,248,127,10
+    CONTROL         "WIFI Mac Address",IDC_CHECK_WIFI,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,20,80,76,10
+    CONTROL         "Generate WIFI Mac Addr. Automatically",
+                    IDC_CHECK_AUTOWIFI,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    172,80,145,10
+    CONTROL         "CheckVersion",IDC_CHECK_VER,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,20,285,60,10
+    EDITTEXT        IDC_EDIT_VER,86,284,236,12,ES_AUTOHSCROLL
+    CONTROL         "SN1",IDC_CHECK_SN1,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,20,331,26,10
+    CONTROL         "SN2",IDC_CHECK_SN2,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,187,331,29,10
+    CONTROL         "Generate SN1 Automatically",IDC_CHECK_AUTOSN1,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,48,331,109,10
+    CONTROL         "Generate SN2 Automatially",IDC_CHECK_AUTOSN2,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,217,331,105,10
+    GROUPBOX        "",IDC_STATIC_SNFRAME,7,323,323,23
+    CONTROL         "Check IMEI After Read",IDC_CHECK_IMEI_ONREAD,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,217,349,91,10
+    LTEXT           "Manual Assign",IDC_STATIC_BTADAS,20,124,48,8
+    EDITTEXT        IDC_EDIT_BTADDRPATH,75,123,232,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "..",IDC_BTN_ASSBTADDR,311,123,12,12
+    LTEXT           "Manual Assign",IDC_STATIC_WIFIADAS,20,173,48,8
+    EDITTEXT        IDC_EDIT_WIFIADDRPATH,75,172,232,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "..",IDC_BTN_ASSWIFIADDR,311,172,12,12
+    CONTROL         "CheckAPVersion",IDC_CHECK_AP_VER,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,20,304,65,10
+    EDITTEXT        IDC_EDIT_AP_VER,86,303,236,12,ES_AUTOHSCROLL
+END
+
+IDD_DIALOG_MODESEL DIALOGEX 0, 0, 365, 176
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Mode Selection"
+FONT 10, "Courier New", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Select",IDOK,14,155,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,70,155,50,14
+    CONTROL         "Normal Mode",IDC_RADIO_MODE1,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,14,18,64,10
+    CONTROL         "Calibration Mode",IDC_RADIO_MODE2,"Button",
+                    BS_AUTORADIOBUTTON | WS_TABSTOP,14,92,80,10
+    LTEXT           "Static",IDC_STATIC_MODEDESRP_NORMAL,96,18,262,29,0,
+                    WS_EX_STATICEDGE
+    LTEXT           "Static",IDC_STATIC_MODEDESRP_WROKING,96,92,262,40,0,
+                    WS_EX_STATICEDGE
+    CONTROL         "Disable Auto-USB",IDC_CHECK_DIS_AUTOUSB,"Button",
+                    BS_AUTOCHECKBOX | WS_DISABLED | WS_TABSTOP,96,48,80,10
+    LTEXT           "",IDC_STATIC_AUTOUSBTIPS,96,58,262,22
+    CONTROL         "Switch mode without rebooting DUT(only for WCDMA data card)",
+                    IDC_CHECK_NOT_REBOOT_DUT,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,44,136,256,10
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,6,4,1
+ PRODUCTVERSION 1,6,4,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404b0"
+        BEGIN
+            VALUE "Comments", "\0"
+            VALUE "CompanyName", "Spreadtrum Communications Inc.\0"
+            VALUE "FileDescription", "Spreadtrum WriteIMEI TOOL\0"
+            VALUE "FileVersion", "1, 6, 4, 1\0"
+            VALUE "InternalName", "WriteIMEI\0"
+            VALUE "LegalCopyright", "CopyRight (C) 2012 Spreadtrum Communications Inc.\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "WriteIMEI.EXE\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "WriteIMEI\0"
+            VALUE "ProductVersion", "1, 6, 4, 1\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 308
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 90
+    END
+
+    IDD_WRITEFLASH_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 304
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 327
+    END
+
+    IDD_DIALOG_SETIMEI, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 330
+        TOPMARGIN, 4
+        BOTTOMMARGIN, 365
+    END
+
+    IDD_DIALOG_MODESEL, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 358
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 169
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "About WriteIMEI(&A)..."
+    IDS_TIMEOUT             "Timeout!"
+    IDS_CONNECT             "Phone is connected, waiting for next step, please do NOT power off..."
+    IDS_SUCCESS             "PASS! Press 'Enter'  button to write next phone."
+    IDS_FAIL                "Write IMEI failed ! Error code: %d ! "
+    IDS_PORT_FAIL           "Open port %d failed !"
+    IDS_WAIT                "Please powered phone in %d seconds."
+    IDS_INIT                "Ready..."
+    IDS_WAIT_NEWMET         "Verifying......"
+    IDS_VERIFPHONESTATE_FAIL 
+                            "No response from phone, please make sure phone has been powered on."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_CABLEINDICATOR_CONN "The port has been detected."
+    IDS_CREATPHASE_ERR      "Create PhaseCheck object  failed!"
+    IDS_CABLEINDICATOR_DISCONN "The port has not been detected yet!"
+    IDS_STOP                "User stopped!"
+    IDS_IMEI_LENTH          "The length of IMEI must be equal to 15!"
+    IDS_BT_LENTH            "The length of Bluetooth address is invalid!"
+    IDS_IMEI_ERR            "IMEI %d is invalid! "
+    IDS_READ_FAIL           "Read IMEI failed!"
+    IDS_READ_PASS           "Read success!"
+    IDS_CHECK               "Please select at least one test item in setting dialog!"
+    IDS_WRITETIME           "Write time exceeds  %d ms."
+    IDS_SPPH_SUCC           "PhaseCheck pass!"
+    IDS_SPPH_FAIL           "PhaseCheck fail!"
+    IDS_SPPH_OPEN_PORT      "Open port fail when PhaseCheck!"
+    IDS_SPPH_STATION_NOT_EXIST "Station is not exist!"
+    IDS_SPPH_STATION_NOT_PASSED "PRE0STATION %s is not passed!"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_SPPH_WRITE_PRODUCTINFO_FAIL "Write PhaseCheck information fail!"
+    IDS_SPPH_READ_PRODUCTINFO_FAIL "Read PhaseCheck information fail!"
+    IDS_SPPH_READ_MAGIC_NUMBER_FAIL "Read magic number of PhaseCheck fail!"
+    IDS_SPPH_DEFAULT        "Create PhaseCheck buffer failed!"
+    IDS_SPPH_INVALID_SPPH_OBJECT "Invalid PhaseCheck object!"
+    IDS_REUSE_IMEI          "IMEI%d  has already been used!"
+    IDS_OPEN_SAVEFILE_ERR   "Open saving IMEI log file fail!"
+    IDS_STATIC_PASS         "Pass:  %d"
+    IDS_STATIC_FAIL         "Failed:%d"
+    IDS_STATIC_YIELD        "Yiled: %d%%"
+    IDS_INVALID_PRODUCTINFO "Invalid porduction info. data structure."
+    IDS_SPPH_NOT_TESTED     "Station %s has not been tested yet."
+    IDS_SPPH_BUFFER_SMALL   "The size of input buffer is tool small."
+    IDS_SPPH_INVALID_MAGIC  "Invalid magic number(not SP05 or SP09)."
+    IDS_VERSION_READ        "Read version from phone failed!"
+    IDS_VERSION_ERR         "Version check failed. "
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_IMEI_REJECT         "IMEI is protected!"
+    IDS_WARNING             "The fourth IMEI (IMEI4) is not supported by phone."
+    IDS_WIFI_FORMAT         "The 1st byte of WIFI address must be even number!"
+    IDS_WIFI_SIX            "The fist 6 digitals of WIFI address should be same as <ForeWIFI> setting value of configuration file."
+    IDS_MODEDISP_NEWMODE    "Normal Mode"
+    IDS_MODEDISP_OLDMODE    "Calibration Mode"
+    IDS_MODEDISP_NEWMODE_TIPS 
+                            "Please make sure the mobile phone power on first, and then plug in USB cable."
+    IDS_SN_LENTH            "The length of SN is invalid!"
+    IDS_MODEDISP_OLDMODE_TIPS 
+                            "Please plug in the connection cable, and then make the moblie phone is powered.\r\nCAUTION:\r\n  Don't press 'power' key. If using the USB cable, the VBUS pin must be disconnected!"
+    IDS_ERRORSTR_UNKNOWN    "Unknown Error!"
+    IDS_TIPSSTR_DISAUTOUSB  "Check the ""Disable Auto-USB"" button ?"
+    IDS_STRING_STATIC_CONN  "The port has been detected!"
+    IDS_STRING_STATIC_DISCONN "The port has not been detected yet!"
+    IDS_WRITESN_FAIL        "Write SN failed ! Error code: %d ! "
+    IDS_SN_ERR              "SN %d is invalid!"
+    IDS_AUTOCLOSEUSB        "If above check-box has been selected, virtual COM port of USB enumeration feature of phone will be disabled!"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_GENCODETYPE_ITEM1   "Manual Input"
+    IDS_GENCODETYPE_ITEM2   "Auto-Generate IMEI"
+    IDS_GENCODETYPE_ITEM3   "Auto Increase"
+    IDS_SET_VERSIONLENGTH_ERR "The length of version must be > %d !"
+    IDS_IMEI_REPEAT         "The IMEI is repeated！"
+    IDS_CHKBT_FAIL          "Check BT Mac Addr failed !"
+    IDS_CHKWIFI_FAIL        "Check WIFI Mac Addr failed !"
+    IDS_CHKIMEI_FAIL        "Check IMEI failed !"
+    IDS_CHK_PASS            "Check IMEI successful !"
+    IDS_CHK_FAIL            "Check failed !"
+    IDS_INVALID_INPUT_BTADDR "Input BT Address is invalid. Format: %s\r\n"
+    IDS_INVALID_INPUT_WFADDR "Input WIFI Address is invalid. Format: %s\r\n"
+    IDS_AP_VER_ERR          "Check AP Version Failed!"
+    IDS_OPEN_CDROM_FAIL     "Open CD-ROM fail!"
+    IDS_READ_CUREF_FAIL     "Read CU Reference failed!"
+    IDS_WRITE_CUREF_FAIL    "Write CU Reference failed！"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_SEND_AT_CMD_ERR     "Set Failed(%s)!"
+END
+
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\WriteFlash.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
